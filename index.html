@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thesis & Proof - Research-Driven Conviction Investing</title>
+    <meta name="description" content="Building conviction through systematic research. Testing hypotheses with real capital.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/" class="logo">
+                    <span class="logo-text">Thesis & Proof</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#framework">Framework</a>
+                    <a href="#analyses">Analyses</a>
+                    <a href="#performance">Performance</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Thesis & Proof</h1>
+                <p class="hero-subtitle">Building conviction through systematic research.<br>Testing hypotheses with real capital.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value" id="activePositions">2</div>
+                        <div class="stat-label">Active Positions</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" id="avgConviction">45.5</div>
+                        <div class="stat-label">Avg Conviction Score</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" id="winRate">—</div>
+                        <div class="stat-label">Win Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Portfolio -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">Current Portfolio</h2>
+            <p class="section-subtitle">Active positions ranked by conviction score</p>
+            
+            <div class="portfolio-grid">
+                <!-- ERJ Position Card -->
+                <div class="position-card">
+                    <div class="position-header">
+                        <div class="position-ticker">ERJ</div>
+                        <div class="position-score">
+                            <span class="score-number">47</span>
+                            <span class="score-max">/50</span>
+                        </div>
+                    </div>
+                    <h3 class="position-name">Embraer</h3>
+                    <div class="position-class">Class A: Cash Compounder</div>
+                    <p class="position-thesis">Brazilian aerospace monopoly generating tech-like cash flow, trading at fraction of peer valuations.</p>
+                    
+                    <div class="position-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Entry</span>
+                            <span class="metric-value">$64.18</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Current</span>
+                            <span class="metric-value">$64.48</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Return</span>
+                            <span class="metric-value positive">+0.5%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="position-breakdown">
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Cash Quality</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="breakdown-score">9/10</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Growth</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="breakdown-score">10/10</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Competitive Position</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="breakdown-score">10/10</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Entry Timing</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 80%"></div>
+                            </div>
+                            <span class="breakdown-score">8/10</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Valuation Gap</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="breakdown-score">10/10</span>
+                        </div>
+                    </div>
+                    
+                    <a href="analyses/erj.html" class="position-link">Read Full Analysis →</a>
+                </div>
+
+                <!-- EFXT Position Card -->
+                <div class="position-card">
+                    <div class="position-header">
+                        <div class="position-ticker">EFXT</div>
+                        <div class="position-score">
+                            <span class="score-number">44</span>
+                            <span class="score-max">/50</span>
+                        </div>
+                    </div>
+                    <h3 class="position-name">Enerflex</h3>
+                    <div class="position-class">Class II: Operational Inflection</div>
+                    <p class="position-thesis">Margin expansion story executing ahead of expectations. Q3 delivered 39% EPS beat with 50% dividend increase.</p>
+                    
+                    <div class="position-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Entry</span>
+                            <span class="metric-value">$12.46</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Current</span>
+                            <span class="metric-value">$13.55</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Return</span>
+                            <span class="metric-value positive">+8.7%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="position-breakdown">
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Cash Quality</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 70%"></div>
+                            </div>
+                            <span class="breakdown-score">7/10</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Growth</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="breakdown-score">9/10</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Competitive Position</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 80%"></div>
+                            </div>
+                            <span class="breakdown-score">8/10</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Entry Timing</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="breakdown-score">10/10</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Valuation Gap</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="breakdown-score">10/10</span>
+                        </div>
+                    </div>
+                    
+                    <div class="position-update">
+                        <div class="update-badge">Q3 Update</div>
+                        <div class="update-text">Revenue +12.6% | Margins +100bps | Dividend +50% | Guidance Raised</div>
+                    </div>
+                    
+                    <a href="analyses/efxt.html" class="position-link">Read Full Analysis →</a>
+                </div>
+            </div>
+
+            <!-- Conviction Class Breakdown -->
+            <div class="class-breakdown">
+                <h3 class="subsection-title">Portfolio by Conviction Class</h3>
+                <div class="class-grid">
+                    <div class="class-card active">
+                        <div class="class-header">
+                            <span class="class-name">Class I</span>
+                            <span class="class-allocation">50%</span>
+                        </div>
+                        <div class="class-description">Cash Compounders</div>
+                        <div class="class-positions">1 position (ERJ)</div>
+                    </div>
+                    <div class="class-card active">
+                        <div class="class-header">
+                            <span class="class-name">Class II</span>
+                            <span class="class-allocation">50%</span>
+                        </div>
+                        <div class="class-description">Operational Inflections</div>
+                        <div class="class-positions">1 position (EFXT)</div>
+                    </div>
+                    <div class="class-card">
+                        <div class="class-header">
+                            <span class="class-name">Class III</span>
+                            <span class="class-allocation">0%</span>
+                        </div>
+                        <div class="class-description">Structural Advantages</div>
+                        <div class="class-positions">0 positions</div>
+                    </div>
+                    <div class="class-card">
+                        <div class="class-header">
+                            <span class="class-name">Class D</span>
+                            <span class="class-allocation">0%</span>
+                        </div>
+                        <div class="class-description">Temporary Impairment</div>
+                        <div class="class-positions">0 positions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Section -->
+    <section id="framework" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">The Framework</h2>
+            <p class="section-subtitle">Systematic evaluation of investment opportunities</p>
+            
+            <div class="framework-intro">
+                <p class="framework-text">Conviction-based investing requires three elements: deep research to understand the business, systematic evaluation to assess opportunities consistently, and transparent results to validate or refute the thesis.</p>
+                <p class="framework-text">This is not stock picking. This is building falsifiable hypotheses about mispriced businesses and testing them with real capital.</p>
+            </div>
+
+            <div class="framework-grid">
+                <div class="framework-card">
+                    <div class="framework-icon">A</div>
+                    <h3 class="framework-title">Cash Compounders</h3>
+                    <p class="framework-description">Overlooked businesses generating exceptional free cash flow that the market undervalues due to sector bias, boring narratives, or complexity.</p>
+                    <div class="framework-criteria">
+                        <div class="criteria-item">FCF yield >10%</div>
+                        <div class="criteria-item">FCF conversion >60%</div>
+                        <div class="criteria-item">Sustainable competitive position</div>
+                        <div class="criteria-item">Trading at significant discount to growth sectors</div>
+                    </div>
+                </div>
+
+                <div class="framework-card">
+                    <div class="framework-icon">B</div>
+                    <h3 class="framework-title">Operational Inflections</h3>
+                    <p class="framework-description">Companies undergoing fundamental operational improvement that the market hasn't yet recognized or priced. The business today is materially different than what the market is valuing.</p>
+                    <div class="framework-criteria">
+                        <div class="criteria-item">Sequential improvement in margins/revenue quality</div>
+                        <div class="criteria-item">Management executing on turnaround plan</div>
+                        <div class="criteria-item">Trading at trough multiples</div>
+                        <div class="criteria-item">Identifiable catalyst forcing recognition</div>
+                    </div>
+                </div>
+
+                <div class="framework-card">
+                    <div class="framework-icon">C</div>
+                    <h3 class="framework-title">Structural Advantages</h3>
+                    <p class="framework-description">Companies with durable competitive positions created by industry structure, not just company execution. Economics favor the incumbent.</p>
+                    <div class="framework-criteria">
+                        <div class="criteria-item">High barriers to entry</div>
+                        <div class="criteria-item">Limited competition from industry dynamics</div>
+                        <div class="criteria-item">Pricing power from supply/demand imbalance</div>
+                        <div class="criteria-item">Secular tailwinds benefiting structural position</div>
+                    </div>
+                </div>
+
+                <div class="framework-card">
+                    <div class="framework-icon">D</div>
+                    <h3 class="framework-title">Temporary Impairment</h3>
+                    <p class="framework-description">High-quality businesses trading at distressed valuations due to temporary, fixable problems. Market confuses cyclical weakness with permanent impairment.</p>
+                    <div class="framework-criteria">
+                        <div class="criteria-item">Historical ROIC >15%</div>
+                        <div class="criteria-item">Temporary headwind causing compression</div>
+                        <div class="criteria-item">Balance sheet can withstand downturn</div>
+                        <div class="criteria-item">Clear path to normalization (12-24 months)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scoring System -->
+            <div class="scoring-system">
+                <h3 class="subsection-title">Conviction Scoring System</h3>
+                <p class="section-subtitle">Every thesis receives a 0-50 point score based on five dimensions</p>
+                
+                <div class="scoring-grid">
+                    <div class="scoring-dimension">
+                        <div class="dimension-header">
+                            <span class="dimension-name">Cash Quality</span>
+                            <span class="dimension-points">/10</span>
+                        </div>
+                        <p class="dimension-description">FCF generation, conversion rates, balance sheet strength, capital efficiency</p>
+                    </div>
+                    <div class="scoring-dimension">
+                        <div class="dimension-header">
+                            <span class="dimension-name">Growth Trajectory</span>
+                            <span class="dimension-points">/10</span>
+                        </div>
+                        <p class="dimension-description">Revenue/earnings momentum, margin expansion, forward visibility, runway</p>
+                    </div>
+                    <div class="scoring-dimension">
+                        <div class="dimension-header">
+                            <span class="dimension-name">Competitive Position</span>
+                            <span class="dimension-points">/10</span>
+                        </div>
+                        <p class="dimension-description">Market structure, barriers to entry, pricing power, structural advantages</p>
+                    </div>
+                    <div class="scoring-dimension">
+                        <div class="dimension-header">
+                            <span class="dimension-name">Entry Timing</span>
+                            <span class="dimension-points">/10</span>
+                        </div>
+                        <p class="dimension-description">Technical setup, sentiment positioning, catalyst proximity, risk/reward asymmetry</p>
+                    </div>
+                    <div class="scoring-dimension">
+                        <div class="dimension-header">
+                            <span class="dimension-name">Valuation Gap</span>
+                            <span class="dimension-points">/10</span>
+                        </div>
+                        <p class="dimension-description">Discount to intrinsic value, peer multiples, margin of safety, rerating potential</p>
+                    </div>
+                </div>
+
+                <div class="scoring-ranges">
+                    <div class="score-range extreme">
+                        <span class="range-score">40-50</span>
+                        <span class="range-label">Extreme Conviction</span>
+                        <span class="range-sizing">15-20% position</span>
+                    </div>
+                    <div class="score-range high">
+                        <span class="range-score">30-39</span>
+                        <span class="range-label">High Conviction</span>
+                        <span class="range-sizing">8-12% position</span>
+                    </div>
+                    <div class="score-range moderate">
+                        <span class="range-score">20-29</span>
+                        <span class="range-label">Moderate Conviction</span>
+                        <span class="range-sizing">3-7% position</span>
+                    </div>
+                    <div class="score-range low">
+                        <span class="range-score">&lt;20</span>
+                        <span class="range-label">Low Conviction</span>
+                        <span class="range-sizing">0-3% position</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance" class="section">
+        <div class="container">
+            <h2 class="section-title">Performance</h2>
+            <p class="section-subtitle">Transparent results, capital-tested proof</p>
+            
+            <div class="performance-notice">
+                <p><strong>Note:</strong> All positions represent real capital deployed. Returns shown are percentages from entry to current price (unrealized) or exit (realized). Position sizes follow conviction score guidelines.</p>
+            </div>
+
+            <div class="performance-grid">
+                <div class="perf-card">
+                    <div class="perf-label">Active Positions</div>
+                    <div class="perf-value">2</div>
+                    <div class="perf-detail">ERJ, EFXT</div>
+                </div>
+                <div class="perf-card">
+                    <div class="perf-label">Avg Conviction Score</div>
+                    <div class="perf-value">45.5<span class="perf-max">/50</span></div>
+                    <div class="perf-detail">High conviction portfolio</div>
+                </div>
+                <div class="perf-card">
+                    <div class="perf-label">Win Rate</div>
+                    <div class="perf-value">—</div>
+                    <div class="perf-detail">Tracking begins on exits</div>
+                </div>
+                <div class="perf-card">
+                    <div class="perf-label">Portfolio Status</div>
+                    <div class="perf-value positive">✓</div>
+                    <div class="perf-detail">All theses validating</div>
+                </div>
+            </div>
+
+            <!-- By Conviction Class -->
+            <div class="class-performance">
+                <h3 class="subsection-title">Performance by Conviction Class</h3>
+                <div class="class-perf-grid">
+                    <div class="class-perf-card">
+                        <div class="class-perf-header">
+                            <span class="class-perf-name">Class I: Cash Compounders</span>
+                            <span class="class-perf-return">Active</span>
+                        </div>
+                        <div class="class-perf-positions">1 position: ERJ (47/50)</div>
+                        <div class="class-perf-status">Entry: $64.18 on Oct 24, 2025 • Status: Holding • Thesis: Validating</div>
+                    </div>
+                    <div class="class-perf-card">
+                        <div class="class-perf-header">
+                            <span class="class-perf-name">Class II: Operational Inflections</span>
+                            <span class="class-perf-return">Active</span>
+                        </div>
+                        <div class="class-perf-positions">1 position: EFXT (44/50)</div>
+                        <div class="class-perf-status">Entry: $12.46 on Oct 24, 2025 • Q3 beat validated thesis • Target: $14-16</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">Thesis & Proof</div>
+                        <p class="footer-tagline">Research-driven conviction. Capital-tested results.</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://twitter.com/TheConvictLab" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        <a href="#framework">Framework</a>
+                        <a href="#analyses">Analyses</a>
+                    </div>
+                </div>
+                <div class="footer-disclaimer">
+                    <p><strong>Disclaimer:</strong> This site documents personal investment research and positions. Nothing here constitutes investment advice. All investments involve risk. Do your own research. Past performance does not guarantee future results.</p>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Thesis & Proof. All positions represent real capital deployed.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
